@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Alert</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        .header-table, .job-table {
+            width: 100%;
+            border: 1px solid #ddd;
+            margin-bottom: 16px;
+        }
+        .header-cell {
+            padding: 16px;
+            text-align: left;
+        }
+        .profile-cell {
+            text-align: right;
+            padding: 16px;
+        }
+        .profile-cell img {
+          height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            margin-left: 8px;
+            object-fit: cover;
+        }
+        .job-title {
+            font-size: 24px;
+            padding: 16px;
+        }
+        .job-listing {
+            padding: 16px;
+        }
+        .job-item {
+            margin-bottom: 16px;
+        }
+        .job-item img {
+            width: 40px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        .job-item h3 {
+            display: inline;
+            font-size: 18px;
+            margin: 0;
+        }
+        .job-item p {
+            margin: 4px 0;
+        }
+        .apply-options {
+            display: flex;
+            align-items: center;
+            background: #ececec;
+            border-radius: 5px;
+            width: 120px;
+            padding: 2px 5px;
+        }
+        .apply-options img {
+            width: 20px;
+            margin-right: 4px;
+        }
+        .email-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #0073b1;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .premium {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .premium img {
+            width: 130px;
+            margin-right: 8px;
+        }
+        .profile {
+            text-align: center;
+        }
+        .profile img {
+          height: 100px;
+            width: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .profile p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid #0073b1;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #0073b1;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <table class="header-table">
+        <tr>
+            <td class="header-cell">
+                <img src="images/logo.png" alt="LinkedIn Logo" style="width: 120px;">
+            </td>
+            <td class="profile-cell">
+                <img src="images/profile.png" alt="Profile Picture">
+            </td>
+        </tr>
+    </table>
+    <table class="job-table">
+        <tr>
+            <td class="job-title" colspan="2">Your job alert for <strong>Software Engineer</strong></td>
+        </tr>
+        <tr>
+            <td class="job-listing" colspan="2">30+ new jobs in United States match your preferences.</td>
+        </tr>
+        <!-- Job 1 -->
+        <tr class="job-item">
+            <td style="width: 50px;">
+                <img src="https://ci3.googleusercontent.com/meips/ADKq_NbU6t1X3PfcRhIYAxiOa_z8LwLrRorx6yr5kKUR2igru2f2UvE-gACQtcFLJxEd2cn25YGAsltj7otcxM_pdCE_flkzbz-KoWTA5UFFUGRzWizvgd6q-9tjTU9x4gFUUouVcD5a0sy1ltj41FNs2cQzPY5VGW1CiYF_sOV163N-iudLLaH7S5X1_rvo0ZWCczMe6glqKaZKaMq3PqEyMdu4PWRH_6-dzFdpKmZ6Sum3q-2JtA5GhuLPnuoMBVlwNpNSb0edy3U=s0-d-e1-ft#https://media.licdn.com/dms/image/C560BAQGUNIyRZFaj0g/company-logo_100_100/0/1657049194702/insight_global_logo?e=2147483647&v=beta&t=65QggNo-i3wIk_ezT2qv-ZFA-ghXBrhWbLT1WK3zZ14" alt="Company Logo" style="width: 100px;">
+            </td>
+            <td>
+                <h3>Jr. Web Developer</h3>
+                <p>Insight Global · United States (Remote)</p>
+                <p>$29-$31 / hour</p>
+                <div class="apply-options">
+                    <img src="images/icon.png" alt="Easy Apply">
+                    <p>Easy Apply</p>
+                </div>
+            </td>
+        </tr>
+        <!-- Job 2 -->
+        <tr class="job-item">
+            <td style="width: 50px;">
+                <img src="https://ci3.googleusercontent.com/meips/ADKq_NaXSiNbAzABPHZgG1TXj2eYVu9JExW7MX9PHEicJ_9clkq90mbS-p385hUmSb1TiGZ_oVH65cuXyQEoeRScAGGgmBzzfa4mIIMlWUbjKff3GTVwF11mkqhKYvcmSD-OPwzTWNen9VCklAfG3aP7kn9kvki-jqaRE88eF_q2r8QVQRgnL5Yqit0ARsPJg6715xEY7CH9LagN3UTAS00tNXBeEqhdKTlG7eUSeexYn98MmWkoue8oDp83wVkSpkGK62yzXg=s0-d-e1-ft#https://media.licdn.com/dms/image/D4D0BAQG5PTbsl7vhcg/company-logo_100_100/0/1695235957598/cyborgwave_logo?e=2147483647&v=beta&t=chZ_3Zw9yajvT4gKXDBj1bs7-PyFcUcHaTzeD8lYlsU" alt="Company Logo" style="width: 100px;">
+            </td>
+            <td>
+                <h3>Web Developer</h3>
+                <p>Cyborgwave · United States (Remote)</p>
+                <p>$30-$40 / hour</p>
+                <div class="apply-options">
+                    <img src="images/icon.png" alt="Easy Apply">
+                    <p>Easy Apply</p>
+                </div>
+            </td>
+        </tr>
+        <!-- Job 3 -->
+        <tr class="job-item">
+            <td style="width: 50px;">
+                <img src="https://ci3.googleusercontent.com/meips/ADKq_Nal7HASrxh76YIFfpUnGh1ozQi5oxkiTcPcp1grub52gMdvjjJc3U7-24ES3yGUEOLfdM4UY3rbdfPKyIk1d2RUyRpyJgWCyvQu-y7uDBtHLDHqqIjkk5CyyFeggZerqWxVGh6naVFgSMNBKYxL4WCrG6fUlpn5DG0FMQXEByBl6yJ5ZQZApHZ5nnK9t91lgjd26aOWcriBQ-y-0dvZX4Dw18m0-thhuFydMYFYiUyNU1K2sdTCz90qHLoEVg=s0-d-e1-ft#https://media.licdn.com/dms/image/D4E0BAQH8gELYgYM3pw/company-logo_100_100/0/1695323117089/nurp_logo?e=2147483647&v=beta&t=-XUcN9K-FnNJ4jy1ymcfg5hwj3R0VvIx-b9FPyD11hQ" alt="Company Logo" style="width: 100px;">
+            </td>
+            <td>
+                <h3>Junior Web Developer</h3>
+                <p>Nurp · United States (Remote)</p>
+                <p>$10-$15 / hour</p>
+            </td>
+        </tr>
+        <!-- Job 4 -->
+        <tr class="job-item">
+            <td style="width: 50px;">
+                <img src="https://ci3.googleusercontent.com/meips/ADKq_NYDzA6mQk1bqSHIu7h37L-OiV1BGBlPPxBLIMUUkZfICmG2DWHJrlCnlaSzZo__jirjkZ9Qws72Kl6Ess-b6q7UIKqy9cExtFzWvp0bf-fl_7YsovADOPkF1_FNK1VeQA2nz-xoZnnh-szrYEm7pTtT_Q-iU9zPLMm0bB6WSmzetEKqxEtJD_e8IM3ufaB2OGVb4ahXxVpOz_s6jfekh45MdIuoiwx7lxGCA5uTcv93M0joW2Se32J0WaPkc3EzxXY59ug=s0-d-e1-ft#https://media.licdn.com/dms/image/C4E0BAQGZbqII1tkEEQ/company-logo_100_100/0/1662058039652/topquadrant_logo?e=2147483647&v=beta&t=g5hc_lhFWDn_bs7fOhLFbH8-UIf1U-aaZoHe9pZ-HCs" alt="Company Logo" style="width: 100px;">
+            </td>
+            <td>
+                <h3>Middle Frontend Developer</h3>
+                <p>Sumsub · United States (Remote)</p>
+                <p>$290-$450 / week</p>
+            </td>
+        </tr>
+        <!-- Job 5 -->
+        <tr class="job-item">
+            <td style="width: 50px;">
+                <img src="https://ci3.googleusercontent.com/meips/ADKq_NaUdfmVYRBoaIU_MLqNMgmLkVTFPD6WUhg2CSjIqDqrPz-XOo1eFySzZ0K_BkuDM1Xf65n45XVuXZeuXhEjZQRQy-xp4d4JV5gGeue2CLYRvJQ7y-kmcJljNErbeI-lZsQcmQIVLT2qEyzBbJmTL2Dpye9UBDVc6ToDIzSULJfgJ5NMr-vQ-G6-o3h9FAUgAMGfoPO6MLt3oClaIa07bhQhC4dT209rlldhab2zm-QAwddAKU2SOIW1FJJo6NvW=s0-d-e1-ft#https://media.licdn.com/dms/image/D4D0BAQHISozituDc-A/company-logo_100_100/0/1681310368422/sumsub_logo?e=2147483647&v=beta&t=UQP9uQBnxKqm-Y_mqT56tNrNPTtGsIsD11jjYFxf4lU" alt="Company Logo" style="width: 100px;">
+            </td>
+            <td>
+                <h3>HTML Developer I</h3>
+                <p>Liberty University · Lynchburg, VA (Remote)</p>
+                <div class="apply-options">
+                    <img src="images/icon.png" alt="Easy Apply">
+                    <p>Easy Apply</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+        <table class="email-container">
+        <tr>
+            <td style="text-align: left;">
+                <a href="#" class="button">See all jobs</a>
+            </td>
+        </tr>
+<tr>
+            <td>
+                <table class="premium">
+                    <tr>
+                        <td>
+                            <img src="https://ci3.googleusercontent.com/meips/ADKq_NaCpo_3Jm9WyQDPNrJl-Yl3l8TEoaTUP1fGFBR-0icqA7UJJhE3JAZi9pjINtKRtr-lhLrXuLu2cbp18d0EDccILTZq8fGCPIGuJGFoZppyZc_et1g=s0-d-e1-ft#https://static.licdn.com/aero-v1/sc/h/6mjomvgg6rdiwm5rnormbdyja" alt="Premium Logo">
+                        </td>
+                    </tr>
+                </table>
+                <table class="profile">
+                    <tr>
+                        <td>
+                            <img src="images/profile.png" alt="Profile Picture">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>See jobs where you’re a top applicant</p>
+                            <a href="#" class="cta-button">Try Premium for free</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
